@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link{
+  @apply px-3 font-bold py-1 inline-block rounded bg-white text-purple-500;
+  &.active{
+    @apply bg-purple-500 text-white;
+  }
+}

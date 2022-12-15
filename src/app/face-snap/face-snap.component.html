@@ -1,0 +1,11 @@
+<div class="p-4 bg-white shadow-2xl rounded m-3" [ngClass]="{snapped: buttonText == 'Oops ! unsnap'}">
+  <h1 class="text-lg font-bold text-purple-400 py-2" [ngClass]="{snapped__title: buttonText == 'Oops ! unsnap'}">{{ snapFace.title | uppercase }}</h1>
+  <img [src]="snapFace.imageUrl" alt="image">
+  <P class="mt-4 space-x-4">
+    <button
+      (click)="onViewFaceSnap()"
+      class="px-3 py-1 active:scale-[90%] transition hover:bg-purple-500 bg-purple-600 rounded text-sm text-white font-semibold">
+      view snap
+    </button>
+  </P>
+</div>
